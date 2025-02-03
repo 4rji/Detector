@@ -20,7 +20,18 @@ This guide provides step-by-step instructions for setting up a Vue.js project wi
 Run the following command to initialize a Vue 3 project:
 
 ```sh
+
+
+sudo apt install nodejs npm libatk-bridge2.0-0 libnss3 libatk1.0-0 -y
+
+npm install -g @vue/cli
+npm i -D vite-plugin-vue-devtools
+
+
+
 npm init vue@latest
+
+
 ```
 
 Select the following options:
@@ -49,6 +60,9 @@ cd detector
 Download the required files from GitHub:
 
 ```sh
+npm install -g @vue/cli
+npm install --save-dev @vitejs/plugin-vue
+
 git clone https://github.com/4rji/detector archivos
 ```
 
@@ -126,6 +140,12 @@ npm install --save-dev electron-builder
 rm -rf node_modules package-lock.json
 npm install
 npm run dist
+
+
+other
+rm -rf node_modules package-lock.json
+npm install
+npm run dev
 ```
 
 This will generate the application in the `dist/` folder.
